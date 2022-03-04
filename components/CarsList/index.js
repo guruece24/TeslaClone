@@ -10,12 +10,12 @@ const CarsList = (props) => {
     <View styles={styles.container}>
       <FlatList 
           data={cars}
-          renderItem={({item}) => <CarItem car={item} />}
-          showsVerticalScrollIndicator={false}
+          renderItem={({item}) => <CarItem car={item} />}          
           snapToAlignment={'start'} 
           decelerationRate={'fast'}
           snapToInterval={Dimensions.get('window').height}         
         //  keyExtractor={cars.item}
+        // showsVerticalScrollIndicator={false}
        />
     </View>
   )
